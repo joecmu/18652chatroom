@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Chatroom Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+</head>
+
+<body>
+
+    <!--
+   <form action = "submit">
+    <input id="m" autocomplete="off" /><button onclick="redirectChat()">Send</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+        var socket = io();
+        $('form').submit(function() {
+            socket.emit('username', $('#m').val());
+            return false;
+        });
+
+        function redirectChat(){
+          document.cookie = 'username=' + $('#m').val();
+          window.location.href = '/';
+        }
+    </script>
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  -->
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form" action="submit">
+                <input id="m" autocomplete="off" type="text" placeholder="username" />
+                <button onclick="redirectChat()">login</button>
+            </form>
+            <script src="/socket.io/socket.io.js"></script>
+            <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+            <script>
+                var socket = io();
+
+                $('form').submit(function() {
+                    //ssocket.emit('username', $('#m').val());
+                    return false;
+                });
+
+                function redirectChat() {
+                    document.cookie = 'username=' + $('#m').val();
+                    window.location.href = '/index';
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

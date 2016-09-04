@@ -1,0 +1,17 @@
+{
+  "name": "18652",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Qiao Wang",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.10.2",
+    "mysql": "^2.11.1",
+    "nodemon": "^1.10.2",
+    "socket.io": "^1.4.8"
+  }
+}
